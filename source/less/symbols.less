@@ -1,0 +1,292 @@
+.letters-black, .numbers {
+  display: none;
+}
+
+.letters-transparent {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+  font-size: 60px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+.letter {
+  position: absolute;
+
+  &--A {
+    top: 90px;
+    right: 29%;
+  }
+
+  &--G {
+    top: 175px;
+    right: 20%;
+    z-index: 3;
+  }
+
+  &--E {
+    top: 135px;
+    right: 12%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .letters-black {
+    display: block;
+    font-family: "Philosopher", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 25px;
+    color: black;
+  }
+
+  .letters-transparent {
+    font-size: 40px;
+  }
+
+  .letter {
+    &--1 {
+      top: 456px;
+      left: 15%;
+    }
+
+    &--2 {
+      top: 420px;
+      left: 20%;
+    }
+
+    &--3 {
+      top: 465px;
+      left: 25%;
+    }
+
+    &--4 {
+      top: 437px;
+      left: 30%;
+    }
+
+    &--5 {
+      top: 477px;
+      left: 35%;
+    }
+
+    &--6 {
+      top: 435px;
+      right: 31%;
+    }
+
+    &--7 {
+      top: 442px;
+      right: 23%;
+    }
+
+    &--8 {
+      top: 470px;
+      right: 15%;
+    }
+
+    &--A {
+      top: 90px;
+      right: 29%;
+    }
+
+    &--G {
+      top: 175px;
+      right: 20%;
+      z-index: 3;
+    }
+
+    &--E {
+      top: 135px;
+      right: 12%;
+    }
+  }
+
+  .numbers {
+    display: block;
+  }
+
+  .number {
+    position: absolute;
+    font-family: "Geometria", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 8px;
+
+    &--1 {
+      top: 129px;
+      left: 14%;
+    }
+
+    &--2 {
+      top: 209px;
+      left: 14%;
+    }
+
+    &--3 {
+      top: 118px;
+      left: 37%;
+      transform: rotate(-90deg);
+      font-family: "Geometria", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 800px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: @desktop-small-width) {
+  .letters-transparent {
+    font-size: 64px;
+  }
+
+  .letter {
+    &--1 {
+      top: 641px;
+    }
+
+    &--2 {
+      top: 606px;
+    }
+
+    &--3 {
+      top: 650px;
+    }
+
+    &--4 {
+      top: 622px;
+    }
+
+    &--5 {
+      top: 662px;
+    }
+
+    &--6 {
+      top: 620px;
+    }
+
+    &--7 {
+      top: 627px;
+    }
+
+    &--8 {
+      top: 654px;
+    }
+
+    &--A {
+      top: 85px;
+      right: 23%;
+    }
+
+    &--G {
+      top: 225px;
+      right: 17%;
+    }
+
+    &--E {
+      top: 125px;
+      right: 10%;
+    }
+  }
+
+  .number {
+    font-size: 12px;
+
+    &--1 {
+      top: 179px;
+      left: 9%;
+    }
+
+    &--2 {
+      top: 259px;
+      left: 9%;
+    }
+
+    &--3 {
+      top: 120px;
+      left: 34%;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: @desktop-big-width) {
+  .letters-transparent {
+    font-size: 80px;
+  }
+
+  .letter {
+    &--1 {
+      top: 741px;
+      left: 15%;
+    }
+
+    &--2 {
+      top: 706px;
+      left: 20%;
+    }
+
+    &--3 {
+      top: 750px;
+      left: 25%;
+    }
+
+    &--4 {
+      top: 722px;
+      left: 30%;
+    }
+
+    &--5 {
+      top: 762px;
+      left: 35%;
+    }
+
+    &--6 {
+      top: 720px;
+      right: 31%;
+    }
+
+    &--7 {
+      top: 727px;
+      right: 23%;
+    }
+
+    &--8 {
+      top: 754px;
+      right: 15%;
+    }
+
+    &--A {
+      top: 85px;
+      right: 28%;
+    }
+
+    &--G {
+      top: 235px;
+      right: 19%;
+    }
+
+    &--E {
+      top: 155px;
+      right: 10%;
+    }
+  }
+
+  .number {
+    font-size: 14px;
+
+    &--1 {
+      left: 11%;
+    }
+
+    &--2 {
+      left: 11%;
+    }
+
+    &--3 {
+      left: 37%;
+      font-size: 28px;
+    }
+  }
+}

@@ -31,7 +31,7 @@ gulp.task("copy", function () {
 
 gulp.task("img", function () {
   return gulp.src([
-      "source/img/*.{jpg,svg}",
+      "source/img/*.jpg",
     ], {
       base: "source"
     })

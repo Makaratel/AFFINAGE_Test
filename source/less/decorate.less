@@ -1,0 +1,312 @@
+.logo {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  z-index: 3;
+
+  font-family: "Philosopher", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 28px;
+  color: black;
+}
+
+.menu-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.menu-border {
+  display: none;
+}
+
+.triangle {
+  position: absolute;
+  z-index: 3;
+
+  &-phone--black {
+    top: 225px;
+    left: 270px;
+  }
+
+  &-phone--white {
+    top: 515px;
+    left: 45px;
+  }
+
+  &-desktop {
+    display: none;
+  }
+}
+
+.circle {
+  display: none;
+}
+
+.lavr {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  margin-left: -55px;
+  z-index: 3;
+  outline: 2px solid red;
+}
+
+.lavr svg {
+  width: 110px;
+  height: 110px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    top: 35px;
+    left: -3%;
+  }
+
+  .menu-button {
+    top: 113px;
+    right: 13px;
+  }
+
+  .menu-border {
+    position: absolute;
+    display: block;
+    top: 101px;
+    right: 3px;
+    z-index: 3;
+  }
+
+  .menu-border svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .triangle {
+    &-phone--black {
+      top: 408px;
+      left: 12%;
+    }
+
+    &-phone--white {
+      top: 498px;
+      left: 35%;
+    }
+
+    &-desktop {
+      display: block;
+    }
+
+    &-desktop--black {
+      top: 450px;
+      right: 6%;
+    }
+
+    &-desktop--white {
+      top: 470px;
+      right: 24%;
+    }
+  }
+
+  .fourangle {
+    position: absolute;
+    top: 190px;
+    left: 25%;
+    z-index: 2;
+    outline: 2px solid red;
+
+    &:after {
+      position: absolute;
+      content: 'очень хороший слоган';
+      bottom: 60px;
+      left: -70px;
+      transform: rotate(-90deg);
+
+      font-family: "Philosopher", "Arial", sans-serif;
+      font-style: italic;
+      font-weight: 400px;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      color: black;
+    }
+  }
+
+  .fourangle svg {
+    width: 88px;
+    height: 141px;
+  }
+
+  .circle {
+    position: absolute;
+    display: block;
+    top: 165px;
+    left: 40%;
+    z-index: 3;
+    outline: 2px solid red;
+
+    &:after {
+      position: absolute;
+      content: 'URAL 03';
+      top: 10px;
+      left: 11px;
+
+      font-family: "Geometria", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400px;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.1em;
+      color: white;
+    }
+  }
+
+  .circle svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .lavr {
+    top: 320px;
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 5px;
+      left: 50%;
+      margin-left: -85px;
+      width: 170px;
+      height: 10px;
+      background-color: rgba(247, 230, 17, 1);
+    }
+  }
+}
+
+@media (min-width: @desktop-small-width) {
+  .menu-button {
+    top: 110px;
+    right: 20px;
+  }
+
+  .menu-border {
+    top: 90px;
+    right: 3px;
+  }
+
+  .menu-border svg {
+    width: auto;
+    height: auto;
+  }
+
+  .triangle {
+    &-phone--black {
+      top: 593px;
+    }
+
+    &-phone--white {
+      top: 683px;
+    }
+
+    &-desktop--black {
+      top: 635px;
+    }
+
+    &-desktop--white {
+      top: 654px;
+    }
+  }
+
+  .fourangle {
+    top: 235px;
+    left: 19%;
+  }
+
+  .fourangle svg {
+    width: 142px;
+    height: 226px;
+  }
+
+  .circle {
+    top: 206px;
+    left: 38%;
+
+    &:after {
+      top: 20px;
+      left: 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .circle svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .lavr {
+    margin-left: -80px;
+    top: 470px;
+
+    &:after {
+      margin-left: -106px;
+      width: 213px;
+    }
+  }
+
+  .lavr svg {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: @desktop-big-width) {
+  .triangle {
+    &-phone--black {
+      top: 693px;
+    }
+
+    &-phone--white {
+      top: 783px;
+    }
+
+    &-desktop--black {
+      top: 735px;
+    }
+
+    &-desktop--white {
+      top: 754px;
+    }
+  }
+
+  .fourangle {
+    top: 266px;
+    left: 21%;
+  }
+
+  .fourangle svg {
+    width: auto;
+    height: auto;
+  }
+
+  .circle {
+    top: 216px;
+    left: 39%;
+
+    &:after {
+      top: 28px;
+      left: 26px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+  }
+
+  .circle svg {
+    width: auto;
+    height: auto;
+  }
+
+  .lavr {
+    top: 570px;
+  }
+}

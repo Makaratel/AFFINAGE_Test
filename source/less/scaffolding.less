@@ -1,0 +1,98 @@
+@tablet-width: 768px;
+@desktop-small-width: 1000px;
+@desktop-big-width: 1440px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria-Light"),
+    url("../fonts/Geometria-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria-LightItalic"),
+    url("../fonts/Geometria-LightItalic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria"),
+    url("../fonts/Geometria.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria-Medium"),
+    url("../fonts/Geometria-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria-Heavy"),
+    url("../fonts/Geometria-Heavy.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: local("Geometria-HeavyItalic"),
+    url("../fonts/Geometria-HeavyItalic.otf") format("opentype");
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: local("Philosopher-Regular"),
+    url("../fonts/Philosopher-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: local("Philosopher-Italic"),
+    url("../fonts/Philosopher-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: local("Philosopher-Bold"),
+    url("../fonts/Philosopher-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(247, 230, 17, 1);
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
