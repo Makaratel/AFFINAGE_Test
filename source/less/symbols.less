@@ -13,21 +13,22 @@
 
 .letter {
   position: absolute;
+  z-index: 3;
 
   &--A {
-    top: 90px;
-    right: 29%;
+    top: 248px;
+    right: 65%;
   }
 
   &--G {
-    top: 175px;
-    right: 20%;
-    z-index: 3;
+    top: 232px;
+    right: 40%;
+    z-index: 1;
   }
 
   &--E {
-    top: 135px;
-    right: 12%;
+    top: 155px;
+    right: 20%;
   }
 }
 
@@ -48,42 +49,42 @@
   .letter {
     &--1 {
       top: 456px;
-      left: 15%;
+      left: 14.6%;
     }
 
     &--2 {
       top: 420px;
-      left: 20%;
+      left: 19.7%;
     }
 
     &--3 {
       top: 465px;
-      left: 25%;
+      left: 24.7%;
     }
 
     &--4 {
       top: 437px;
-      left: 30%;
+      left: 29.3%;
     }
 
     &--5 {
       top: 477px;
-      left: 35%;
+      left: 34.5%;
     }
 
     &--6 {
       top: 435px;
-      right: 31%;
+      right: 32.3%;
     }
 
     &--7 {
       top: 442px;
-      right: 23%;
+      right: 24.3%;
     }
 
     &--8 {
       top: 470px;
-      right: 15%;
+      right: 15.8%;
     }
 
     &--A {
@@ -92,17 +93,29 @@
     }
 
     &--G {
-      top: 175px;
+      top: 165px;
       right: 20%;
-      z-index: 3;
+      z-index: 2;
+
     }
 
     &--E {
-      top: 135px;
+      top: 125px;
       right: 12%;
+      z-index: 1;
     }
   }
 
+.letter--7:after {
+  position: absolute;
+  content: "";
+  top: -14px;
+  left: -18px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/shadow-letter.png") 50% 50% no-repeat;
+
+}
   .numbers {
     display: block;
   }
@@ -132,6 +145,7 @@
       font-style: normal;
       font-weight: 800px;
       font-size: 18px;
+      letter-spacing: 0.1em;
     }
   }
 }
@@ -185,7 +199,7 @@
     }
 
     &--E {
-      top: 125px;
+      top: 160px;
       right: 10%;
     }
   }
@@ -204,7 +218,7 @@
     }
 
     &--3 {
-      top: 120px;
+      top: 135px;
       left: 34%;
       font-size: 24px;
     }
@@ -218,58 +232,49 @@
 
   .letter {
     &--1 {
-      top: 741px;
-      left: 15%;
+      top: 745px;
     }
 
     &--2 {
-      top: 706px;
-      left: 20%;
+      top: 710px;
     }
 
     &--3 {
-      top: 750px;
-      left: 25%;
+      top: 754px;
     }
 
     &--4 {
-      top: 722px;
-      left: 30%;
+      top: 726px;
     }
 
     &--5 {
-      top: 762px;
-      left: 35%;
+      top: 766px;
     }
 
     &--6 {
-      top: 720px;
-      right: 31%;
+      top: 724px;
     }
 
     &--7 {
-      top: 727px;
-      right: 23%;
+      top: 731px;
     }
 
     &--8 {
-      top: 754px;
-      right: 15%;
+      top: 758px;
     }
 
     &--A {
-      top: 85px;
-      right: 28%;
+      top: 80px;
+      right: 25.3%;
     }
 
     &--G {
       top: 235px;
-      right: 19%;
+      right: 18.5%;
     }
 
     &--E {
-      top: 155px;
-      right: 10%;
+      right: 12%;
     }
   }
 
@@ -285,7 +290,7 @@
     }
 
     &--3 {
-      left: 37%;
+      left: 37.5%;
       font-size: 28px;
     }
   }
